@@ -1,0 +1,34 @@
+.navbar {
+    display: flex;
+    justify-content: flex-end; /* Aligns items to the right */
+    background-color: #4f793b;
+    padding: 10px;
+  }
+  
+  .navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    ul {
+      flex-direction: column;
+    }
+  
+    li {
+      margin: 0.5rem 0;
+    }
+  }
+  
+  

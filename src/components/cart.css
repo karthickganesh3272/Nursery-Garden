@@ -1,0 +1,127 @@
+/* Overall container for the cart */
+.cart-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Heading for the cart */
+  .cart-container h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* List of cart items */
+  .cart-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Individual cart item */
+  .cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center items horizontally */
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    gap: 20px; /* Space between image and text */
+  }
+  
+  /* Cart item image */
+  .cart-item-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  
+  /* Cart item text and container */
+  .cart-item-text {
+    text-align: center; /* Center text */
+    flex-grow: 1;
+  }
+  
+  /* Cart item name and price */
+  .cart-item-text p {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  /* Cart item controls */
+  .cart-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between controls */
+  }
+  
+  .cart-controls button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cart-controls button:hover {
+    background-color: #45a049;
+  }
+  
+  .cart-controls span {
+    margin: 0 10px;
+    font-size: 16px;
+  }
+  
+  /* Total amount section */
+  .total-section {
+    text-align: right;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 600px) {
+    .cart-item {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .cart-controls {
+      margin-top: 10px;
+    }
+  }
+  
+
+  /* Place Order button */
+.place-order-button {
+  background-color: #007bff; /* Blue background for the button */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px; /* Space above the button */
+  display: block;
+  text-align: center;
+  width: 100%; /* Full width on small screens */
+  max-width: 200px; /* Limit button width on larger screens */
+  margin-left: auto; /* Center button in the container */
+  margin-right: auto; /* Center button in the container */
+  transition: background-color 0.3s ease;
+}
+
+.place-order-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.place-order-button:disabled {
+  background-color: #b0bec5; /* Disabled state color */
+  cursor: not-allowed;
+}
